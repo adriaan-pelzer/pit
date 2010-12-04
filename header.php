@@ -97,7 +97,7 @@ function browser_specific_stylesheet(){
 <!--h1><?php bloginfo ('name'); ?></h1>
 <h2><?php bloginfo ('description'); ?></h2-->
 <section id="title">
-    <h1><span id="pit">Pit</span><span id="title_right"><span id="productions">productions</span><hr /><span id="produksies">produksies</span></span></h1>
-    <span id="number">012 651 2432</span>
+<h1><span id="pit"><a href="<?php bloginfo ('url'); ?>">P<span id="i">i</span>t</a></span><span id="title_right"><span id="productions">productions</span><hr /><span id="produksies">produksies</span></span></h1>
+    <span id="number">+2712 651 2432</span>
 </section>
 </header>

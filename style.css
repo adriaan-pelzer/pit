@@ -91,16 +91,21 @@ body {
 
 #title {
     /*color: #211a12;*/
-    color: #ffffff;
+    color: #51261f;
     text-transform: uppercase; 
     /*background-color: #5c4331;*/
-    background: #000000 url(images/PIT_logo.png) no-repeat center center;
+    background: #ffffff url(images/PIT_logo.png) no-repeat center center;
     padding: 0 0.75em 0 0;
     text-align: right;
     height: 17em;
-    border: 1px solid #ffffff;
+    /*border: 1px solid #ffffff;*/
+    border: 0;
 }
 
+#i {
+    position: relative;
+    left: -5px;
+}
 
 #title h1, #number {
     /*opacity: 0.5;*/
@@ -175,7 +180,7 @@ nav li.page-item-16 {
     margin-right: 4.4117647em;
 }
 
-nav a, nav a:visited {
+header a, header a:visited {
     color: #51261f;
     text-decoration: none;
     text-transform: uppercase;

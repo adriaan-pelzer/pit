@@ -13,6 +13,7 @@ function get_right_cat() {
     }
 }
 
+/* Don't ever let functions produce output. Let them return something, and add proper error checking. Use a return code */
 function get_right_posts() {
     global $post;
     $tmp_post = $post;
