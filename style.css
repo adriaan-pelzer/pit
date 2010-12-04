@@ -180,14 +180,18 @@ nav li.page-item-16 {
     margin-right: 4.4117647em;
 }
 
-header a, header a:visited {
+a, a:visited {
     color: #51261f;
     text-decoration: none;
     text-transform: uppercase;
 }
 
-nav a:hover {
+a:hover {
     color: #d5e445;
+}
+
+#title a:hover {
+    color: #51261f;
 }
 
 nav li.current_page_item a {
@@ -233,10 +237,11 @@ nav li.current_page_item a {
 }
 
 #cat_container {
-    overflow-x: scroll;
+    overflow-x: hidden;
 }
 
 #cat_content {
+    position: relative;
     padding: 0 5.9375em 0 9.9375em;
 }
 
@@ -288,4 +293,16 @@ nav li.current_page_item a {
 
 address {
     font-style: normal;
+}
+
+.paging {
+    width: 100%;
+}
+
+#page_left {
+    float: left;
+}
+
+#page_right {
+    float: right;
 }
