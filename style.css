@@ -1,11 +1,11 @@
 /*
 Theme Name: PIT
-Theme URI: http://www.pitproductions.org/pit/
-Description: Wordpress Theme for the 2010 Trias XMAS card project.
-Author: Adriaan Pelzer
-Author URI: http://wewillraakyou.com/
+Theme URI: http://pitproductions.org/
+Description: Wordpress Theme for PIT Productions Website.
+Author: Adriaan Pelzer / Simon Kruger
+Author URI: http://pitproductions.org/
 Version: 1.0 
-Tags: e-commerce, no sidebar, microsite
+Tags: soundcloud
 */
 
 /* CSS reset (http://meyerweb.com/eric/tools/css/reset/) */
@@ -213,11 +213,13 @@ nav li.current_page_item a {
 .post_container {
     height: 10.4375em;
     width: 36.25em;
-    /*background: #484b08;*/
+    background: #ffffff;
     padding: 0.3125em 1.25em 0;
     margin: 1.25em 0.625em;
     /*color: #211a12;*/
-    border: 1px solid #000000;
+    color: #51261f;
+    /*border: 1px solid #51261f;*/
+    border: 0;
     display: inline-block;
 }
 
@@ -288,7 +290,7 @@ nav li.current_page_item a {
 }
 
 #map embed {
-    border: 1px solid #000000;
+    border: 1px solid #51261f;
 }
 
 address {
