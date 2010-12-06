@@ -20,6 +20,8 @@ if ( !empty($categorydesc))
 get_right_posts();
 ?>
     </div><!-- #content .hfeed -->
+    <div id="gradient_left"></div>
+    <div id="gradient_right"></div>
 </div><!-- #container -->
 <nav id="paging">
     <span id="page_left"><a>&laquo;</a></span><span id="page_right"><a>&raquo;</a></span>
