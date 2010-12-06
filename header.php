@@ -86,18 +86,18 @@ function browser_specific_stylesheet(){
 <?php wp_head(); ?>
 </head>
 <body>
-<header>
-<hgroup>
-</hgroup>
-<nav>
-<ul>
+    <header>
+        <hgroup>
+        </hgroup>
+        <nav>
+            <ul>
 <?php wp_list_pages ('depth=1&title_li='); ?>
-</ul>
-</nav>
-<!--h1><?php bloginfo ('name'); ?></h1>
-<h2><?php bloginfo ('description'); ?></h2-->
-<section id="title">
-<h1><span id="pit"><a href="<?php bloginfo ('url'); ?>">P<span id="i">i</span>t</a></span><span id="title_right"><span id="productions">productions</span><hr /><span id="produksies">produksies</span></span></h1>
-    <span id="number">+2712 651 2432</span>
-</section>
-</header>
+            </ul>
+        </nav>
+        <!--h1><?php bloginfo ('name'); ?></h1>
+        <h2><?php bloginfo ('description'); ?></h2-->
+        <section id="title">
+            <h1><span id="pit"><a href="<?php bloginfo ('url'); ?>">P<span id="i">i</span>t</a></span><span id="title_right"><span id="productions">productions</span><hr /><span id="produksies">produksies</span></span></h1>
+            <span id="number">+2712 651 2432</span>
+        </section>
+    </header>
