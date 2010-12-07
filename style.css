@@ -249,12 +249,23 @@ nav li.current_page_item a {
 }
 
 #cat_container {
-    overflow-x: hidden;
+    overflow: hidden;
 }
 
 #cat_content {
     position: relative;
     padding: 0 5.9375em 0 9.9375em;
+}
+
+#gradient_left, #gradient_right {
+    display: inline-block;
+    width: 29.875em;
+    position: relative;
+    top: -11.75em;
+}
+#gradient_right {
+    text-align: right;
+    left: 1px;
 }
 
 /********************** about *****************/
