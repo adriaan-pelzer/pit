@@ -14,8 +14,8 @@ endwhile; else: ?>
 <?php endif; ?>
 
     </div><!-- #content .hfeed -->
-    <div id="gradient_left"></div>
-    <div id="gradient_right"></div>
+    <div id="gradient_left"><img src="<?php bloginfo('template_url'); ?>/images/post_container_gradient_left.png" /></div>
+    <div id="gradient_right"><img src="<?php bloginfo('template_url'); ?>/images/post_container_gradient_right.png" /></div>
 </div><!-- #container -->
 <nav id="paging">
     <span id="page_left"><a>&laquo;</a></span><span id="page_right"><a>&raquo;</a></span>

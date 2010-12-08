@@ -250,6 +250,7 @@ nav li.current_page_item a {
 
 #cat_container {
     overflow: hidden;
+    height: 12.25em;
 }
 
 #cat_content {

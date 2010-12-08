@@ -17,8 +17,8 @@ if ( !empty($categorydesc))
 <?php
 /*$cat_id = get_right_cat();*/
 $myposts = get_posts('numberposts=0');
-foreach($myposts as $posts) {
-    setup_postdata($posts);
+foreach($myposts as $post) {
+    setup_postdata($post);
     include('carousel.php');
 }
 ?>
