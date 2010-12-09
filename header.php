@@ -68,7 +68,7 @@ function browser_specific_stylesheet(){
         return '<!-- '.$browser->getUserAgent().' -->';
     }
 }*/
-
+echo $_SERVER['HTTP_USER_AGENT'];
 ?>
 <!DOCTYPE html>
 <html lang="nl">
