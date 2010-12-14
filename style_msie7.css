@@ -44,3 +44,22 @@ border-color: #51261f;
     display: block;
     margin-top: -1.3333333em;
 }
+
+#cat_container {
+    position: relative;
+}
+
+#i {
+    display: inline-block;
+    width: 95px;
+    margin-left: -2px;
+    margin-right: -12px;
+}
+
+#gradient_right { 
+    margin-left: 0.1875em;
+}
+
+#map {
+    margin-top: -18.5em;
+}
