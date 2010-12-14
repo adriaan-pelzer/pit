@@ -68,7 +68,7 @@ function browser_specific_stylesheet(){
         return '<!-- '.$browser->getUserAgent().' -->';
     }
 }*/
-echo $_SERVER['HTTP_USER_AGENT'];
+$browser = detect_browser();
 ?>
 <!DOCTYPE html>
 <html lang="nl">
@@ -76,6 +76,7 @@ echo $_SERVER['HTTP_USER_AGENT'];
 <meta charset="utf-8" />
 <title><?php wp_title ('&laquo;', true, 'right'); ?><?php bloginfo ('name'); ?></title>
 <link rel="stylesheet" href="<?php bloginfo ('stylesheet_url'); ?>" />
+<link rel="stylesheet" href="<?php bloginfo ('template_directory'); ?>/style_<?php echo $browser; ?>.css" />
 <?php /* echo browser_specific_stylesheet (); */ ?>
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.3/jquery.min.js"></script>
 <script src="<?php bloginfo ('template_url'); ?>/js/scripts.js"></script>
