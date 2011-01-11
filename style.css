@@ -260,13 +260,19 @@ nav li.current_page_item a {
 
 #gradient_left, #gradient_right {
     display: inline-block;
-    width: 29.875em;
     position: relative;
     top: -11.75em;
+    width: 7.8125em;
 }
+
+#gradient_left {
+    margin-right: 22.0625em;
+}
+
 #gradient_right {
     text-align: right;
     left: 1px;
+    margin-left: 22.0625em;
 }
 
 /********************** about *****************/
