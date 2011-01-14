@@ -1,17 +1,17 @@
 <?php
 
-/*require_once 'Browser.php';
+require_once 'Browser_php4_compat.php';
 
 function browser_specific_stylesheet(){
     $browser = new Browser ();
 
     switch ($browser->getBrowser()) {
-    case Browser::BROWSER_OPERA:
+    case Browser::BROWSER_OPERA():
         if ($browser->getVersion() >= 10) {
             $stylesheet = 'style_op10.css';
         }
         break;
-    case Browser::BROWSER_FIREFOX:
+    case Browser::BROWSER_FIREFOX():
         if ($browser->getVersion() >= 4) {
             $stylesheet = 'style_ff4.css';
         } else if ($browser->getVersion() >= 3.6) {
@@ -26,7 +26,7 @@ function browser_specific_stylesheet(){
             $found = FALSE;
         }
         break;
-    case Browser::BROWSER_IE:
+    case Browser::BROWSER_IE():
         if ($browser->getVersion() >= 9) {
             $stylesheet = 'style_ie9.css';
         } else if ($browser->getVersion() >= 8) {
@@ -39,14 +39,14 @@ function browser_specific_stylesheet(){
             $found = FALSE;
         }
         break;
-    case Browser::BROWSER_SAFARI:
+    case Browser::BROWSER_SAFARI():
         if ($browser->getVersion() >= 5) {
             $stylesheet = 'style_sf5.css';
         } else {
             $found = FALSE;
         }
         break;
-    case Browser::BROWSER_CHROME:
+    case Browser::BROWSER_CHROME():
         if ($browser->getVersion() >= 8) {
             $stylesheet = 'style_ch8.css';
         } else if ($browser->getVersion() >= 7) {
@@ -67,8 +67,8 @@ function browser_specific_stylesheet(){
     } else {
         return '<!-- '.$browser->getUserAgent().' -->';
     }
-}*/
-$browser = detect_browser();
+}
+/* $browser = detect_browser(); */
 ?>
 <!DOCTYPE html>
 <html lang="nl">
@@ -76,8 +76,8 @@ $browser = detect_browser();
 <meta charset="utf-8" />
 <title><?php wp_title ('&laquo;', true, 'right'); ?><?php bloginfo ('name'); ?></title>
 <link rel="stylesheet" href="<?php bloginfo ('stylesheet_url'); ?>" />
-<link rel="stylesheet" href="<?php bloginfo ('template_directory'); ?>/style_<?php echo $browser; ?>.css" />
-<?php /* echo browser_specific_stylesheet (); */ ?>
+<!--link rel="stylesheet" href="<?php bloginfo ('template_directory'); ?>/style_<?php echo $browser; ?>.css" /-->
+<?php echo browser_specific_stylesheet (); ?>
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.3/jquery.min.js"></script>
 <script src="<?php bloginfo ('template_url'); ?>/js/scripts.js"></script>
 <!--[if lt IE 9]>
