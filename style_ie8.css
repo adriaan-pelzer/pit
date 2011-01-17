@@ -1,0 +1,37 @@
+@font-face {
+    font-family: bernard;
+    src: url(bernhc-webfont.eot);
+}
+
+body {
+    margin-top: 4.25em;
+}
+
+nav ul {
+    margin-bottom: -0.44117647em;
+}
+
+#title_right {
+    margin-top: 1.75em;
+}
+
+#number {
+    top: -2em;
+}
+
+#cat_container {
+    margin-top:-3.125em;
+}
+
+.post_container p {
+    padding: 0.5625em 0 0.75em 0;
+}
+
+#body_post_35, #body_post_2 {
+    margin-top:-3.1875em;
+    display: block;
+}
+
+footer {
+    display: block;
+}
