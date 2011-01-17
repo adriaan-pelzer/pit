@@ -17,7 +17,7 @@ function browser_specific_stylesheet(){
         } else if ($browser->getVersion() >= 3.6) {
             $stylesheet = 'style_ff36.css';
         } else if ($browser->getVersion() >= 3.5) {
-            $stylesheet = 'style_ff36.css';
+            $stylesheet = 'style_ff35.css';
         } else if ($browser->getVersion() >= 3.0) {
             $stylesheet = 'style_ff30.css';
         } else if ($browser->getVersion() >= 3) {
