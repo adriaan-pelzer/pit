@@ -325,8 +325,10 @@ address {
     font-style: normal;
 }
 
-.paging {
+/***************** ad nav ******************/
+#paging {
     width: 100%;
+    margin-top: 0;
 }
 
 #page_left {
