@@ -338,3 +338,9 @@ address {
 #page_right {
     float: right;
 }
+
+/*********************** footer **********************/
+
+footer {
+    clear: both;
+}
