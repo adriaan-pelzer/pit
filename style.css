@@ -299,6 +299,10 @@ nav li.current_page_item a {
     vertical-align: top;
 }
 
+#contact_info {
+    margin-left: 0.25em;
+}
+
 #body_post_35 p {
     margin-left: 0;
 }
