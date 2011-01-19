@@ -1,0 +1,15 @@
+body {
+    margin-top: 4.25em;
+}
+
+#number {
+    margin-top: -1px;
+}
+
+.post_container p {
+    padding: 0.625em 0 0.75em 0;
+}
+
+nav, section, footer {
+    display: block;
+}
