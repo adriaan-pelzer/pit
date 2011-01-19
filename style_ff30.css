@@ -1,0 +1,41 @@
+body {
+    font-family: Impact;
+    margin-top: 4.1875em;
+}
+
+#pit, #title_right {
+    font-weight: normal;
+}
+
+nav ul {
+    margin-bottom: -0.94117647em;
+}
+
+#title_right {
+    margin-top: 2.625em;
+}
+
+#title_right hr {
+    color: #51261F;
+}
+
+#number {
+    margin-top: 0.1666666em;
+}
+
+#cat_container {
+    margin-top:-2.5625em;
+}
+
+.post_container p {
+    padding: 0.6875em 0 0.75em 0;
+}
+
+#map {
+    float: none;
+}
+
+#body_post_35, #body_post_2 {
+    margin-top:-2.5em;
+    display: block;
+}
