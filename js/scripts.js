@@ -1,7 +1,7 @@
 $(document).ready(function(){
     var offset;
     var verArray = ($.browser.version).split('.');
-    if (($.browser.msie) && ((verArray[0]) == 6){
+    if (($.browser.msie) && ((verArray[0]) == 6)){
         offset = 640;
     } else {
         offset = 644;
