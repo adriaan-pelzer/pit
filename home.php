@@ -23,11 +23,13 @@ foreach($myposts as $post) {
 }
 ?>
     </div><!-- #content .hfeed -->
-    <div id="gradient_left"><img class="pngfix" src="<?php bloginfo('template_url'); ?>/images/post_container_gradient_left.png" width="125" height="167" /></div>
-    <div id="gradient_right"><img class="pngfix" src="<?php bloginfo('template_url'); ?>/images/post_container_gradient_right.png" width="125" height="167" /></div>
+    <nav id="paging">
+        <div id="gradient_left"><span id="page_left"><a><img class="pngfix" src="<?php bloginfo('template_url'); ?>/images/post_container_gradient_left_arrows_sprite.png" width="125" height="334" /></a></span></div>
+        <div id="gradient_right"><span id="page_right"><a><img class="pngfix" src="<?php bloginfo('template_url'); ?>/images/post_container_gradient_right_arrows_sprite.png" width="125" height="334" /></a></span></div>
+    </nav>
 </div><!-- #container -->
-<nav id="paging">
+<!--nav id="paging">
     <span id="page_left"><a>&laquo;</a></span><span id="page_right"><a>&raquo;</a></span>
-</nav>
+</nav-->
 
 <?php get_footer() ?>

@@ -333,6 +333,7 @@ address {
 #paging {
     width: 100%;
     margin-top: 0;
+    font-size: 1em;
 }
 
 #page_left {
@@ -342,6 +343,16 @@ address {
 #page_right {
     float: right;
 }
+
+#paging a img {
+    position: relative;
+    top: -167px;
+}
+
+#paging a:hover img {
+    top: 0;
+}
+
 
 /*********************** footer **********************/
 
