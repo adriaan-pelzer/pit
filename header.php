@@ -7,9 +7,11 @@ function browser_specific_stylesheet(){
 
     switch ($browser->getBrowser()) {
     case Browser::BROWSER_OPERA():
-        if ($browser->getVersion() >= 10) {
+        if ($browser->getVersion() >= 11) {
+            $stylesheet = 'style_op11.css';
+        } else if ($browser->getVersion() >= 10) {
             $stylesheet = 'style_op10.css';
-        }
+        } 
         break;
     case Browser::BROWSER_FIREFOX():
         if ($browser->getVersion() >= 4) {
