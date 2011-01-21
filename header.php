@@ -80,6 +80,15 @@ function browser_specific_stylesheet(){
 <?php echo browser_specific_stylesheet (); ?>
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.3/jquery.min.js"></script>
 <script src="<?php bloginfo ('template_url'); ?>/js/scripts.js"></script>
+<!--[if lt IE 7]>
+<script src="<?php bloginfo ('template_url'); ?>/js/pngfix.js"></script>
+<script>
+<!--
+    DD_belatedPNG.fix('.pngfix');
+//-->
+</script>
+<![endif]--> 
+
 <!--[if lt IE 9]>
 <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 <![endif]-->
