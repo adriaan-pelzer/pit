@@ -13,3 +13,9 @@ body {
 nav, section, footer {
     display: block;
 }
+
+#cat_container { 
+    position: relative;
+    width: 60em;
+}
+
