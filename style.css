@@ -107,8 +107,8 @@ body {
     left: -5px;
 }
 
-#title h1, #number {
-    /*opacity: 0.5;*/
+#title h1 {
+    overflow: hidden;
 }
 
 #pit {
@@ -223,7 +223,7 @@ nav li.current_page_item a {
 .post_container {
     height: 10.4375em;
     width: 36.25em;
-    background: #ffffff;
+    background: #ffffff url(images/ad_loader.gif) no-repeat center center;
     padding: 0.3125em 1.25em 0;
     margin: 1.25em 0.625em;
     /*color: #211a12;*/
@@ -351,6 +351,20 @@ address {
 
 #paging a:hover img {
     top: 0;
+}
+
+/*********************** Voices **********************/
+
+#voices_drop_down {
+    margin: 1em 0;
+    text-align: center;
+}
+
+#voices_select {
+    font-size: 1.5em;
+    color: #51261f;
+    font-family: bernard;
+    border: 1px #51261f solid;
 }
 
 
