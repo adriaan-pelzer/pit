@@ -346,11 +346,11 @@ address {
 
 #paging a img {
     position: relative;
-    top: -167px;
+    top: -334px;
 }
 
 #paging a:hover img {
-    top: 0;
+    top: -167px;
 }
 
 /*********************** Voices **********************/
@@ -360,11 +360,43 @@ address {
     text-align: center;
 }
 
-#voices_select {
+#drop_down_button {
+    display: block;
     font-size: 1.5em;
     color: #51261f;
     font-family: bernard;
-    border: 1px #51261f solid;
+    background: url(images/drop_down_button.png);
+    height: 1.166666em;
+    width: 11.75em;
+    padding: 0.2083333em 0 0 0.33333em;
+    text-transform: none;
+    text-align: left;
+    margin: 0 auto;
+    cursor: pointer;
+}
+
+#drop_down_list {
+    display: none;
+    margin-top: 0.1666666em;
+    text-align: center;
+    position: relative;
+    z-index: 100;
+}
+
+#drop_down_button:hover #drop_down_list {
+    display: block;
+}
+
+#drop_down_list li {
+    background: url(images/drop_down_list_item_bg.png);
+    height: 1.166666em;
+    width: 11.75em;
+    padding: 0.2083333em 0 0 0.33333em;
+    margin-left: -0.33333em;
+}
+
+.hidden {
+    display: none;
 }
 
 
