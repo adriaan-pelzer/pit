@@ -7,7 +7,7 @@ Template Name: Display_Ads
 
 <?php
 $num_posts = (wp_count_posts());
-$fav_cat = get_cat_ID('favourites');
+$fav_cat = get_cat_ID('show case');
 if (is_page('Home')) {
     $cat = $fav_cat;
 } else {

@@ -159,7 +159,7 @@ body {
     text-align: center;
     position: relative;
     top: -1.73333em;
-    display: inline-block;
+    display: none;
     margin-left: 18.3333em;
 }
 
@@ -187,7 +187,7 @@ nav li.page-item-2 {
 }
 
 nav li.page-item-16 {
-    margin-right: 4.4117647em;
+    /*margin-right: 4.4117647em;*/
 }
 
 a, a:visited {
