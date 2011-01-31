@@ -38,7 +38,7 @@ if ( !empty($categorydesc))
     echo ('<div class="category_description">' . $categorydesc . '</div>'); ?>
 <?php
 /*$cat_id = get_right_cat();*/
-$myposts = get_posts('numberposts=0&category='. $name_id .'');
+$myposts = get_posts('numberposts=-1&category='. $name_id .'');
 foreach($myposts as $post) {
     setup_postdata($post);
     include('carousel.php');

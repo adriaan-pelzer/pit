@@ -1,11 +1,20 @@
 <?php
 /*
-Template Name: Home 
+Template Name: Display_Ads 
 */
 ?>
 <?php get_header() ?>
 
-<?php $num_posts = (wp_count_posts()); ?>
+<?php
+$num_posts = (wp_count_posts());
+$fav_cat = get_cat_ID('favourites');
+if (is_page('Home')) {
+    $cat = $fav_cat;
+} else {
+    $cat = '';
+}
+
+?>
 
 <div id="cat_container" class="body">
 <?php /*get_sidebar ();*/ ?>
@@ -16,7 +25,7 @@ if ( !empty($categorydesc))
     echo ('<div class="category_description">' . $categorydesc . '</div>'); ?>
 <?php
 /*$cat_id = get_right_cat();*/
-$myposts = get_posts('numberposts=-1');
+$myposts = get_posts('numberposts=-1&category=' . $cat . '');
 foreach($myposts as $post) {
     setup_postdata($post);
     include('carousel.php');
