@@ -84,6 +84,7 @@ a:visited {
 
 body {
     font-family: bernard;
+    color: #51261f;
     /*background: #31291e;*/
 }
 
@@ -91,7 +92,6 @@ body {
 
 #title {
     /*color: #211a12;*/
-    color: #51261f;
     text-transform: uppercase; 
     /*background-color: #5c4331;*/
     /*background: #ffffff url(images/PIT_logo.png) no-repeat center center;*/
@@ -227,7 +227,6 @@ nav li.current_page_item a {
     padding: 0.3125em 1.25em 0;
     margin: 1.25em 0.625em;
     /*color: #211a12;*/
-    color: #51261f;
     /*border: 1px solid #51261f;*/
     border: 0;
     display: inline-block;
@@ -275,10 +274,17 @@ nav li.current_page_item a {
     margin-left: 22.0625em;
 }
 
+#caption p {
+    text-align: center;
+    font-size: 1.5em;
+    margin-top: 0.666667em;
+}
+
 /********************** about *****************/
 
 #body_post_35, #body_post_2 {
     font-family: arial, sans-serif;
+    color: #000000;
 }
 
 #body_post_35 p, #body_post_2 p {
@@ -367,20 +373,31 @@ address {
     font-family: bernard;
     background: url(images/drop_down_button.png);
     height: 1.166666em;
-    width: 11.75em;
-    padding: 0.2083333em 0 0 0.33333em;
+    width: 11.25em;
+    padding: 0.2083333em 0.833333em 0 0;
     text-transform: none;
-    text-align: left;
+    text-align: center;
     margin: 0 auto;
     cursor: pointer;
 }
 
 #drop_down_list {
     display: none;
-    margin-top: 0.1666666em;
+    margin-top: 0.1875em;
     text-align: center;
     position: relative;
     z-index: 100;
+    font-size: 0.66666667em;
+    /*margin-left: -0.5em;*/
+    font-family: arial;
+}
+#drop_down_list a {
+    color: #808080;
+    text-transform: none;
+}
+
+#drop_down_list a:hover {
+    color: #d5e445;
 }
 
 #drop_down_button:hover #drop_down_list {
@@ -388,11 +405,22 @@ address {
 }
 
 #drop_down_list li {
-    background: url(images/drop_down_list_item_bg.png);
-    height: 1.166666em;
+    background: url(images/drop_down_list_bg.png);
+    /*height: 1.166666em;
     width: 11.75em;
     padding: 0.2083333em 0 0 0.33333em;
-    margin-left: -0.33333em;
+    margin-left: -0.33333em;*/
+    width: 18.125em;
+}
+
+li#drop_down_top {
+    background: url(images/drop_down_list_top.png);
+    height: 0.375em;
+}
+
+li#drop_down_bottom {
+    background: url(images/drop_down_list_bottom.png);
+    height: 0.375em;
 }
 
 .hidden {

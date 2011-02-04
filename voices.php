@@ -7,24 +7,30 @@ Template Name: Voices
 <?php
 $num_posts = (wp_count_posts());
 if ($_GET['voice_name']) {
-    $name = $_GET['voice_name'];
-    $name_id = get_cat_ID($name);
+    $name_place_holder = $_GET['voice_name'];
+    $name_id = get_cat_ID($name_place_holder);
 } else {
     $name_id = '';
+    $name_place_holder = 'Please Choose A Voice Artist';
 }
 ?>
 <section id="voices_drop_down" >
-    <img src="<?php bloginfo('template_url'); ?>/images/drop_down_list_item_bg.png" class="hidden" />
+    <img src="<?php bloginfo('template_url'); ?>/images/drop_down_list_top.png" class="hidden" />
+    <img src="<?php bloginfo('template_url'); ?>/images/drop_down_list_bottom.png" class="hidden" />
+    <img src="<?php bloginfo('template_url'); ?>/images/drop_down_list_bg.png" class="hidden" />
 <?php $top_cat = get_cat_ID('Artist Name');
 $voices = get_categories('child_of='. $top_cat .''); 
 ?>
-    <span id="drop_down_button">Please Choose A Voice Artist
+    <span id="drop_down_button">
+        <?php echo ucfirst($name_place_holder); ?>
         <ul id="drop_down_list">
+            <li id="drop_down_top"></li>
 <?php
 foreach ($voices as $voice) {
     echo '<li><a href="' . get_permalink() . '?voice_name=' . $voice->slug . '">'. $voice->name . '</a></li>';
 }
 ?>
+            <li id="drop_down_bottom"></li>
         </ul>
     </span>
 </section>
