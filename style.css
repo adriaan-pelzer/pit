@@ -274,7 +274,7 @@ nav li.current_page_item a {
     margin-left: 22.0625em;
 }
 
-#caption p {
+.caption {
     text-align: center;
     font-size: 1.5em;
     margin-top: 0.666667em;

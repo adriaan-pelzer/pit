@@ -17,7 +17,7 @@ if (is_page('Home')) {
 }
 
 ?>
-<section id="caption">
+<section class="caption">
 <?php if (have_posts ()) {
     while (have_posts ()){ 
         the_post (); 
