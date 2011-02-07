@@ -42,14 +42,14 @@ border-color: #51261f;
 }
 
 #number {
-    display: block;
+    display: none;
     margin-top: -1.3333333em;
     top: -2em;
 }
 
 #cat_container {
     position: relative;
-    margin-top:-1.875em;
+    margin-top:1.1875em;
 }
 
 #i {
@@ -80,11 +80,15 @@ border-color: #51261f;
 }
 
 body {
-    margin-top: 4.25em;
+    margin-top: 0.0625em;
 }
 
 nav ul {
     margin-bottom: 0.29411em;
+}
+
+nav li {
+    margin-right: 85px;
 }
 
 .post_container p {
@@ -92,11 +96,10 @@ nav ul {
 }
 
 #body_post_35, #body_post_2 {
-    margin-top:-2.5em;
-    display: block;
+    margin-top:-0.25em;
 }
 
-footer {
+footer, header, nav, section {
     display: block;
 }
 
@@ -105,3 +108,15 @@ footer {
     margin-bottom: 0.75em;
 } 
 
+.caption {
+    text-align: center;
+    margin-top: 0.583333em;
+}
+
+#title {
+    padding: 0;
+}
+
+.page-item-35 {
+    margin-right: 0;
+}

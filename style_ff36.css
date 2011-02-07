@@ -1,3 +1,11 @@
+nav, footer, section {
+    display: block;
+}
+
+#title {
+    padding: 0;
+}
+
 #title_right hr {
     color: #51261F;
 }
@@ -7,14 +15,13 @@ body {
 }
 
 #cat_container {
-    margin-top:-2.6875em;
+    margin-top: -0.0625em;
 }
 
 .post_container p {
     padding: 0.6875em 0 0.75em 0;
 }
 
-#body_post_35, #body_post_2 {
-    margin-top:-2.6875em;
-    display: block;
+.page-item-35 {
+    margin-right: 0;
 }
