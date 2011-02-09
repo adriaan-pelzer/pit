@@ -8,6 +8,12 @@ $(document).ready(function(){
     }
     $('#paging').data ('position', 0);
     $('#page_left a img').css({top: '0px', cursor: 'default'});
+    $('#page_right a img').css({top: '-334px', cursor: 'pointer'});
+    $('#page_right a img').hover (function() {
+        $(this).css('top', '-167px');
+    }, function() {
+        $(this).css('top', '-334px');
+    });
     if ($('.post_container').size() == 1) {
         $('#page_right a img').css({top: '0px', cursor: 'default'});
     }
