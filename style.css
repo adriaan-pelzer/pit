@@ -179,7 +179,11 @@ nav ul {
 
 nav li {
     display: inline-block;
-    margin: 0 1.6em;
+    margin: 0 0.7647em;
+}
+
+nav li.page-item-325 {
+    margin-left: 0.735294em;
 }
 
 nav li.page-item-33 {
@@ -188,6 +192,7 @@ nav li.page-item-33 {
 
 nav li.page-item-35 {
     margin-right: 0;
+    float: right;
 }
 
 a, a:visited {
