@@ -21,8 +21,8 @@ if ($_GET['voice_name']) {
 <?php $top_cat = get_cat_ID('Artist Name');
 $voices = get_categories('child_of='. $top_cat .''); 
 ?>
-    <span id="drop_down_button">
-        <a href="#" onClick="toggle_list_display()">
+    <span id="drop_down_button" onClick="toggle_list_display()">
+        <a href="#">
         <?php echo ucfirst($name_place_holder); ?>
         </a>
         <ul id="drop_down_list">
