@@ -9,13 +9,12 @@ Template Name: Display_Ads
 $num_posts = (wp_count_posts());
 $fav_cat = get_cat_ID('show case');
 if (is_page('Home')) {
-    $cat = $fav_cat;
+    $cat = 'cat='.$fav_cat;
     $order_by = 'modified';
 } else {
-    $cat = '';
+    $cat = "cat=-".$fav_cat;
     $order_by = 'date';
 }
-
 ?>
 <section class="caption">
 <?php if (have_posts ()) {
@@ -36,7 +35,7 @@ if ( !empty($categorydesc))
     echo ('<div class="category_description">' . $categorydesc . '</div>'); ?>
 <?php
 /*$cat_id = get_right_cat();*/
-$myposts = get_posts('numberposts=-1&category=' . $cat . '&orderby=' . $order_by . '');
+$myposts = query_posts('numberposts=-1&' . $cat . '&orderby=' . $order_by . '');
 foreach($myposts as $post) {
     setup_postdata($post);
     include('carousel.php');
