@@ -14,7 +14,7 @@ if ($_GET['voice_name']) {
     $name_place_holder = 'Please Choose A Voice Artist';
 }
 ?>
-<section id="voices_drop_down" >
+<section id="voices_drop_down">
     <img src="<?php bloginfo('template_url'); ?>/images/drop_down_list_top.png" class="hidden" />
     <img src="<?php bloginfo('template_url'); ?>/images/drop_down_list_bottom.png" class="hidden" />
     <img src="<?php bloginfo('template_url'); ?>/images/drop_down_list_bg.png" class="hidden" />
@@ -22,7 +22,9 @@ if ($_GET['voice_name']) {
 $voices = get_categories('child_of='. $top_cat .''); 
 ?>
     <span id="drop_down_button">
+        <a href="#" onClick="toggle_list_display()">
         <?php echo ucfirst($name_place_holder); ?>
+        </a>
         <ul id="drop_down_list">
             <li id="drop_down_top"></li>
 <?php
