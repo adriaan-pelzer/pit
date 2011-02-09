@@ -97,7 +97,9 @@ function browser_specific_stylesheet(){
 <link rel="shortcut icon" href="<?php bloginfo ('template_url'); ?>/images/favicon.ico" />
 <?php wp_head(); ?>
 </head>
-<body>
+
+    <body id="<?php echo $post->post_name; ?>">
+<?php echo $page->post_name; ?>
     <header>
         <hgroup>
         </hgroup>
