@@ -96,7 +96,12 @@ nav ul {
 }
 
 nav li {
-    margin-right: 85px;
+    zoom: 1;
+    margin: 0 33px;
+}
+
+.page-item-33 {
+    margin-left: 0;
 }
 
 .post_container p {
@@ -149,4 +154,9 @@ footer, header, nav, section {
 
 #drop_down_list li#drop_down_bottom {
     margin-top: -0.8125em;
+}
+
+.page-item-35 {
+    position: absolute;
+    right: 0;
 }
