@@ -19,8 +19,8 @@ nav ul {
     top: -2em;
 }
 
-#cat_container {
-    margin-top:-3.125em;
+#ads #cat_container {
+    margin-top:-0.375em;
 }
 
 .post_container p {
@@ -28,10 +28,34 @@ nav ul {
 }
 
 #body_post_35, #body_post_2 {
-    margin-top:-3.1875em;
+    margin-top:-1.4375em;
     display: block;
 }
 
 footer {
     display: block;
 }
+
+.caption p {
+    margin-top: -0.166666em;
+}
+
+#drop_down_button {
+    width: 11.29em;
+    background-repeat: repeat-y
+    margin-top: -0.2em;
+}
+
+#drop_down_list li {
+    width: 18.3em;
+}
+
+#voices_drop_down {
+    display: block;
+    margin-top: -0.3125em;
+}
+
+.post-title {
+    margin-bottom: 2px;
+}
+
