@@ -6,17 +6,20 @@ Template Name: Display_Ads
 <?php get_header() ?>
 
 <?php
+ $page_name = '';
 $num_posts = (wp_count_posts());
 $fav_cat = get_cat_ID('show case');
 if (is_page('Home')) {
     $cat = 'cat='.$fav_cat;
     $order_by = 'modified';
+    $page_name = 'home';
 } else {
     $cat = "cat=-".$fav_cat;
     $order_by = 'date';
+    $page_name = '';
 }
 ?>
-<section class="caption">
+<section class="body" id="body_post_<?php echo $post->ID; ?>">
 <?php if (have_posts ()) {
     while (have_posts ()){ 
         the_post (); 

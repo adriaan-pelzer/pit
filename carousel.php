@@ -4,6 +4,6 @@
 <?php
     the_content ();
 ?>
-    <span class="post_date"><?php if (!(is_page('Home'))) {echo date('j F Y', (strtotime($post->post_date)));} ?></span>
+    <span class="post_date"><?php if (!($page_name == 'home')) {echo date('j F Y', (strtotime($post->post_date)));} ?></span>
 </section>
 
