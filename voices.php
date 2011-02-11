@@ -15,8 +15,8 @@ if ($_GET['voice_name']) {
 }
 ?>
 <section id="voices_drop_down">
-    <img src="<?php bloginfo('template_url'); ?>/images/drop_down_list_top.png" class="hidden" />
-    <img src="<?php bloginfo('template_url'); ?>/images/drop_down_list_bottom.png" class="hidden" />
+    <img src="<?php bloginfo('template_url'); ?>/images/drop_down_list_top.png" class="pngfix hidden" />
+    <img src="<?php bloginfo('template_url'); ?>/images/drop_down_list_bottom.png" class="pngfix hidden" />
     <img src="<?php bloginfo('template_url'); ?>/images/drop_down_list_bg.png" class="hidden" />
 <?php $top_cat = get_cat_ID('Artist Name');
 $voices = get_categories('child_of='. $top_cat .''); 
@@ -26,13 +26,13 @@ $voices = get_categories('child_of='. $top_cat .'');
         <?php echo ucfirst($name_place_holder); ?>
         </a>
         <ul id="drop_down_list">
-            <li id="drop_down_top"></li>
+            <li id="drop_down_top" class="pngfix"></li>
 <?php
 foreach ($voices as $voice) {
     echo '<li><a href="' . get_permalink() . '?voice_name=' . $voice->slug . '">'. $voice->name . '</a></li>';
 }
 ?>
-            <li id="drop_down_bottom"></li>
+            <li id="drop_down_bottom" class="pngfix"></li>
         </ul>
     </span>
 </section>

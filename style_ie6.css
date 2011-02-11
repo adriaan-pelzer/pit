@@ -46,14 +46,9 @@ nav li,
     margin-top: -2em;
 }
 
-#number {
-    display: block;
-    margin-top: -1.566666em;
-}
-
 #cat_container {
     position: relative;
-    margin-top: -2.5625em;
+    margin-top: 0;
 }
 
 #i {
@@ -68,13 +63,13 @@ nav li,
 }
 
 #map {
-    margin-top: -18.5em;
+    margin-top: -17.8125em;
 }
 
 body {
     overflow: hidden;
     position: relative;
-    margin-top: 4.25em;
+    margin-top: 0;
 }
 
 #cat_content .post_container .post_date {
@@ -86,22 +81,80 @@ body {
 }
 
 #body_post_35, #body_post_2 {
-    margin-top:-2em;
+    margin-top:-3.75em;
+}
+
+footer, header, nav, section {
     display: block;
 }
 
-footer {
-    display: block;
+#number {
+    display: none;
+    margin-top: -1.566666em;
 }
 
-li.page-item-33 {
-    margin-right: 2.352941em;
+#paging a:hover {
+    color: #d5e445;
 }
 
-li.page-item-2 {
-    margin-right: 1.7941em;
+#title {
+    padding: 0;
 }
 
-li.page-item-16 {
-    margin-right: 4.617647em;
+#caption {
+    margin-top: -1.791em;
+}
+
+nav li {
+    zoom: 1;
+    margin: 0 33px;
+}
+
+.page-item-33 {
+    margin-left: 0;
+}
+
+
+.page-item-35 {
+    position: absolute;
+    right: 0;
+}
+
+#voices_drop_down {
+    margin-top: -2.75em
+}
+
+#drop_down_button {
+    background: url(images/drop_down_button_ie6.jpg);
+}
+
+#drop_down_list li {
+    background: url(images/drop_down_list_bg_ie6.jpg);
+    width: 290px;
+    margin-bottom: -2px;
+}
+
+li#drop_down_top {
+    background: url(images/drop_down_list_top_ie6.jpg) no-repeat;
+    margin-bottom: -13px;
+}
+
+li#drop_down_bottom {
+    background: url(images/drop_down_list_bottom.png);
+    background-repeat: no-repeat;
+}
+
+#drop_down_button {
+    position: relative;
+    z-index: 100;
+}
+
+#drop_down_list {
+    position: absolute;
+    left: 0;
+    top: 29px;
+}
+
+#ads #cat_container {
+    margin-top: -3.625em;
 }
