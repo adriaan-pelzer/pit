@@ -12,7 +12,7 @@
 }
 
 #cat_container {
-    margin-top:-2.6875em;
+    margin-top:-0.0625em;
 }
 
 body {
@@ -23,11 +23,11 @@ body {
     padding-top: 1px;
 }
 
-#body_post_35, #body_post_2 {
+/*#body_post_35, #body_post_2 {
     margin-top:-2.6875em;
     display: block;
-}
+}*/
 
-footer {
+header, section, nav, footer {
     display: block;
 }
