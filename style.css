@@ -88,6 +88,13 @@ body {
     /*background: #31291e;*/
 }
 
+h3 {
+    font-family: bernard;
+    color: #51261f;
+    margin: inherit;
+}
+
+
 /*************** header *********************/
 
 #title {
@@ -179,11 +186,11 @@ nav ul {
 
 nav li {
     display: inline-block;
-    margin: 0 0.7647em;
+    margin: 0 0.5294em;
 }
 
 nav li.page-item-325 {
-    margin-left: 0.735294em;
+    /*margin-left: 0.735294em;*/
 }
 
 nav li.page-item-33 {
@@ -279,24 +286,32 @@ nav li.current_page_item a {
     margin-left: 22.0625em;
 }
 
-.caption {
-    text-align: center;
-    font-size: 1.5em;
-    margin-top: 0.666667em;
-}
-
-/********************** about *****************/
-
-#body_post_35, #body_post_2 {
+#body_post_35, #body_post_33, #body_post_2 {
     font-family: arial, sans-serif;
     color: #000000;
 }
 
-#body_post_35 p, #body_post_2 p {
+#body_post_35 p, #body_post_33 p, #body_post_2 p {
     margin: 1.25em;
     line-height: 1.25em;
     font-size: 0.875em;
 }
+
+#body_post_33 p.caption {
+    font-family: bernard;
+    color: #51261f;
+    text-align: center;
+    font-size: 1.5em;
+    margin-top: 1em;
+    margin-bottom: 0;
+}
+
+/***************** about ***************/
+
+ #body_post_2 h3 {
+     font-size: 1.5em;
+     margin: 0.833em;
+ }
 
 /****************** contact ******************/
 
