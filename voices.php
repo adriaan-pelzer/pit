@@ -8,7 +8,8 @@ Template Name: Voices
 $num_posts = (wp_count_posts());
 if ($_GET['voice_name']) {
     $name_place_holder = $_GET['voice_name'];
-    $name_id = get_cat_ID($name_place_holder);
+    $cat_obj = get_category_by_slug($name_place_holder);
+    $name_id = $cat_obj->term_id;
 } else {
     $name_id = '';
     $name_place_holder = 'Please Choose A Voice Artist';
