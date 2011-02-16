@@ -18,7 +18,6 @@ if (is_page('Home')) {
     $order_by = 'date';
     $page_name = '';
 }
-echo $cat;
 ?>
 <section class="body" id="body_post_<?php echo $post->ID; ?>">
 <?php if (have_posts ()) {
