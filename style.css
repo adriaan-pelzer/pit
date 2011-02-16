@@ -82,6 +82,16 @@ a:visited {
     src: url(BERNHC.TTF);
 }
 
+@font-face {
+    font-family: american_typewriter;
+    src: url(amrtypen.ttf);
+}
+
+@font-face {
+    font-family: american_typewriter_bold;
+    src: url(amrtypeb.ttf);
+}
+
 body {
     font-family: bernard;
     color: #51261f;
@@ -287,19 +297,27 @@ nav li.current_page_item a {
 #gradient_right {
     text-align: right;
     left: 1px;
-    margin-left: 22.0625em;
+    margin-left: 21.9375em;
+}
+
+#voices #gradient_right, #ads #gradient_right {
+    left: 2px;
 }
 
 #contact .body, #home .body, #about .body, #schools-programs .body {
-    font-family: arial, sans-serif;
+    font-family: american_typewriter, serif;
     color: #51261f;
 }
 
-#about .body ul, #contact .body p, #home .body p, #about .body p, #schools-programs .body p {
+#contact .body p strong, #home .body p strong, #about .body p strong, #schools-programs .body p strong {
+    font-family: american_typewriter_bold, serif;
+}
+
+#about .body ul, #home .body ul, #contact .body p, #home .body p, #about .body p, #schools-programs .body p {
     margin: 1.25em auto;
     line-height: 1.25em;
     font-size: 0.875em;
-    width: 50em;
+    width: 45.7em;
 }
 
 #contact .body p {
@@ -318,21 +336,29 @@ nav li.current_page_item a {
 
 /***************** about ***************/
 
- #body_post_2 h3 {
-     font-size: 1.5em;
-     margin: 0.833em auto;
-     width: 29.1666em;
- }
+#body_post_2 h3 {
+ font-size: 1.5em;
+ margin: 0.833em auto;
+ width: 26.666em;
+}
 
- .alignright {
-     float: right;
-     margin: 1.25em 0 0 1.25em;
- }
+#schools-programs .body a, #schools-programs .body a:visited, #about .body a, #about .body a:visited, #contact .body a, #contact .body a:visited {
+    color: #d5e445;
+}
 
- .alignleft {
-     float: left;
-     margin: 1.25em 1.25em 0 0;
- }
+#about .body a:hover, #contact .body a:hover, #schools-programs .body a:hover {
+    color: #51261f;
+}
+
+.alignright {
+ float: right;
+ margin: 1.25em 0 0 1.25em;
+}
+
+.alignleft {
+ float: left;
+ margin: 1.25em 1.25em 0 0;
+}
 
 /****************** contact ******************/
 
@@ -382,6 +408,11 @@ address {
 
 #contact h3 {
     font-size: 1.5em;
+}
+
+label {
+    float: right;
+    font-size: 0.75em;
 }
 
 /***************** ad nav ******************/
@@ -442,10 +473,10 @@ address {
     z-index: 100;
     font-size: 0.66666667em;
     /*margin-left: -0.5em;*/
-    font-family: arial;
+    font-family: american_typewriter;
 }
 #drop_down_list a {
-    color: #808080;
+    color: #51261f;
     text-transform: none;
 }
 
