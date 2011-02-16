@@ -8,7 +8,7 @@ body {
 }
 
 nav ul {
-    margin-bottom: -0.94117647em;
+    margin-bottom: 0;
 }
 
 #title_right {
@@ -36,6 +36,42 @@ nav ul {
 }
 
 #body_post_35, #body_post_2 {
-    margin-top:-2.5em;
+    margin-top: 1.75em;
     display: block;
+}
+
+footer, header, nav, section {
+    display: block;
+}
+
+.page-item-35 {
+    margin-top: -1em;
+}
+
+#title {
+    padding: 0;
+}
+
+nav li {
+    margin: 0 0.588em;
+}
+
+.caption {
+    margin-top: 1em;
+}
+
+nav {
+    font-size: 2em;
+}
+
+#voices_drop_down {
+    margin-top: 1.75em;
+}
+
+#drop_down_button a {
+    font-size: 0.875em;
+}
+
+#voices #cat_container, #ads #cat_container {
+    margin-top: 0;
 }
