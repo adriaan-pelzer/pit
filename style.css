@@ -91,7 +91,6 @@ body {
 h3 {
     font-family: bernard;
     color: #51261f;
-    margin: inherit;
 }
 
 
@@ -186,7 +185,7 @@ nav ul {
 
 nav li {
     display: inline-block;
-    margin: 0 0.5294em;
+    margin: 0 0.411em;
 }
 
 nav li.page-item-325 {
@@ -198,7 +197,7 @@ nav li.page-item-33 {
 }
 
 nav li.page-item-35 {
-    margin-right: 0;
+    /*margin-right: 0;*/
     float: right;
 }
 
@@ -254,6 +253,11 @@ nav li.current_page_item a {
     position: relative;
 }
 
+.post_container p {
+    margin: 0!important;
+    width: 580px!important;
+}
+
 .post_date {
     display: block;
     text-align: center;
@@ -286,15 +290,20 @@ nav li.current_page_item a {
     margin-left: 22.0625em;
 }
 
-#body_post_35, #body_post_33, #body_post_2 {
+#contact .body, #home .body, #about .body, #schools-programs .body {
     font-family: arial, sans-serif;
-    color: #000000;
+    color: #51261f;
 }
 
-#body_post_35 p, #body_post_33 p, #body_post_2 p {
-    margin: 1.25em;
+#about .body ul, #contact .body p, #home .body p, #about .body p, #schools-programs .body p {
+    margin: 1.25em auto;
     line-height: 1.25em;
     font-size: 0.875em;
+    width: 50em;
+}
+
+#contact .body p {
+    width: auto;
 }
 
 #body_post_33 p.caption {
@@ -304,13 +313,25 @@ nav li.current_page_item a {
     font-size: 1.5em;
     margin-top: 1em;
     margin-bottom: 0;
+    width: 40em;
 }
 
 /***************** about ***************/
 
  #body_post_2 h3 {
      font-size: 1.5em;
-     margin: 0.833em;
+     margin: 0.833em auto;
+     width: 29.1666em;
+ }
+
+ .alignright {
+     float: right;
+     margin: 1.25em 0 0 1.25em;
+ }
+
+ .alignleft {
+     float: left;
+     margin: 1.25em 1.25em 0 0;
  }
 
 /****************** contact ******************/
@@ -327,6 +348,8 @@ nav li.current_page_item a {
 
 #contact_info {
     padding-left: 0.25em;
+    width: 20em;
+    margin-top: 1.25em;
 }
 
 #body_post_35 p {
@@ -345,6 +368,8 @@ nav li.current_page_item a {
 #map {
     float: right;
     margin-top: 1.25em;
+    margin-bottom: 4em;
+    margin-right: 0.8125em;
 }
 
 #map img {
@@ -353,6 +378,10 @@ nav li.current_page_item a {
 
 address {
     font-style: normal;
+}
+
+#contact h3 {
+    font-size: 1.5em;
 }
 
 /***************** ad nav ******************/
@@ -456,4 +485,11 @@ li#drop_down_bottom {
 
 footer {
     clear: both;
+    text-align: center;
+    margin-top: 4em;
+}
+
+footer hr {
+    border: 0;
+    border-top: 1px solid #51261f;
 }
