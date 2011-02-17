@@ -3,12 +3,23 @@
     src: url(bernhc-webfont.eot);
 }
 
+@font-face {
+    font-family: american_typewriter;
+    src: url(amrtypen_1-webfont.eot);
+}
+
+@font-face {
+    font-family: american_typewriter_bold;
+    src: url(amrtypeb_1-webfont.eot);
+}
+
+
 body {
     margin-top: 4.25em;
 }
 
 nav ul {
-    margin-bottom: -0.44117647em;
+    /*margin-bottom: -0.44117647em;*/
 }
 
 #title_right {
@@ -20,19 +31,18 @@ nav ul {
 }
 
 #ads #cat_container {
-    margin-top:-0.375em;
+    margin-top:-0.7em;
 }
 
 .post_container p {
     padding: 0.5625em 0 0.75em 0;
 }
 
-#body_post_35, #body_post_2 {
-    margin-top:-1.4375em;
-    display: block;
+#body_post_35, #body_post_2, #schools-programs .body {
+    margin-top:-0.75em;
 }
 
-footer {
+footer, section, header, nav {
     display: block;
 }
 
@@ -40,10 +50,16 @@ footer {
     margin-top: -0.166666em;
 }
 
+#body_post_33 p.caption {
+    margin-bottom: 0.5em;
+    margin-top: 1.1em;
+}
+
 #drop_down_button {
     width: 11.29em;
     background-repeat: repeat-y
     margin-top: -0.2em;
+    padding-bottom: 1px;
 }
 
 #drop_down_list li {
@@ -52,10 +68,26 @@ footer {
 
 #voices_drop_down {
     display: block;
-    margin-top: -0.3125em;
+    margin-top: 0.25em;
 }
 
 .post-title {
     margin-bottom: 2px;
 }
 
+#title {
+    margin-top: 1.1875em;
+    padding: 0;
+}
+
+#home .body {
+    margin-top: -0.75em;
+}
+
+#home .body ul {
+    line-height: 1.21em;
+}
+
+li.page-item-35 {
+    margin-right: 0.2em;
+}
