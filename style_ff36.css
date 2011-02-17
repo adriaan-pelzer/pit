@@ -1,4 +1,4 @@
-nav, footer, section {
+nav, footer, section, header {
     display: block;
 }
 
@@ -24,4 +24,34 @@ body {
 
 .page-item-35 {
     margin-right: 0;
+}
+
+#home .body {
+    margin-top: -0.0625em;
+}
+
+#home .body, #about .body {
+    margin-top: -0.0625em;
+}
+
+#home .body p, #home .body ul, #about .body p, #schools-programs .body p, #contact .body p {
+    margin: 1.214em auto;
+    line-height: 1.214em;
+}
+
+#body_post_33 p.caption {
+    margin-bottom: 0;
+    margin-top: 1.041em;
+}
+
+footer {
+    margin-top: 4.125em;
+}
+
+#about .body h3, #contact .body h3 {
+    margin: 0.875em auto 0.8333em;
+}
+
+#contact_info {
+    margin-top: 0;
 }
