@@ -3,6 +3,16 @@
     src: url(bernhc-webfont.eot);
 }
 
+@font-face {
+    font-family: american_typewriter;
+    src: url(amrtypen_1-webfont.eot);
+}
+
+@font-face {
+    font-family: american_typewriter_bold;
+    src: url(amrtypeb_1-webfont.eot);
+}
+
 #prods,
 #title_right,
 #number,
@@ -57,7 +67,7 @@ border-color: #51261f;
 }
 
 #ads #cat_container {
-    margin-top: 2em;
+    margin-top: 1.06em;
 }
 
 #i {
@@ -72,8 +82,16 @@ border-color: #51261f;
 }
 
 #map {
-    margin-top: -17.8125em;
+    margin-top: -43.3125em;
+    margin-right: 0;
+    position: relative;
 }
+
+#map label {
+    position: absolute;
+    right: 0;
+}
+
 
 #cat_content .post_container .post_date {
     margin-top: 0.9375em;
@@ -100,8 +118,14 @@ nav li {
     margin: 0 33px;
 }
 
-.page-item-33 {
+.page-item-2, .page-item-33, .page-item-325 {
     margin-left: 0;
+    margin-right: 0.97em;
+}
+
+.page-item-16 {
+    margin-left: 0;
+    margin-right: 1em;
 }
 
 .post_container p {
@@ -144,7 +168,7 @@ footer, header, nav, section {
 
 #drop_down_list li {
     width: 290px;
-    margin-bottom: -0.125em;
+    margin-bottom: -3px;
 }
 
 
@@ -153,10 +177,22 @@ footer, header, nav, section {
 }
 
 #drop_down_list li#drop_down_bottom {
-    margin-top: -0.8125em;
+    margin-top: -14px;
 }
 
 .page-item-35 {
     position: absolute;
     right: 0;
+}
+
+footer {
+    margin-top: 2.1875em;
+}
+
+#contact footer {
+    margin-top: 4em;
+}
+
+#about footer, #schools-programs footer {
+    margin-top: 3.65em;
 }
