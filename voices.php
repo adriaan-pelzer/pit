@@ -16,8 +16,8 @@ if ($_GET['voice_name']) {
 }
 ?>
 <section id="voices_drop_down">
-    <img src="<?php bloginfo('template_url'); ?>/images/drop_down_list_top.png" class="pngfix hidden" />
-    <img src="<?php bloginfo('template_url'); ?>/images/drop_down_list_bottom.png" class="pngfix hidden" />
+    <img src="<?php bloginfo('template_url'); ?>/images/drop_down_list_top.png" class="hidden" />
+    <img src="<?php bloginfo('template_url'); ?>/images/drop_down_list_bottom.png" class="hidden" />
     <img src="<?php bloginfo('template_url'); ?>/images/drop_down_list_bg.png" class="hidden" />
 <?php $top_cat = get_cat_ID('Artist Name');
 $voices = get_categories('child_of='. $top_cat .''); 
