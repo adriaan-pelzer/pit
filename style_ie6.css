@@ -75,6 +75,7 @@ nav li,
 #map {
     margin-top: -43.3125em;
     margin-right: 0;
+    position: relative;
 }
 
 #map label {
