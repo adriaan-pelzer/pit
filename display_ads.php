@@ -28,7 +28,7 @@ if (is_page('Home')) {
 }
 ?>
 </section>
-<div id="cat_container" class="body">
+<div id="cat_container">
 
 <?php /*get_sidebar ();*/ ?>
     <div id="cat_content" style="width:<?php echo (41.625*($num_posts->publish)); ?>em">
