@@ -43,7 +43,7 @@ $i = 0;
 
 foreach($myposts as $post) {
     setup_postdata($post);
-    if ($i++ < 3) {
+    if ($i++ < 0) {
         include('carousel.php');
     } else {
         include('carousel_empty.php');

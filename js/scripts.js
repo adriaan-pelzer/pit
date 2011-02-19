@@ -82,4 +82,7 @@ $(document).ready(function(){
         }
     });
 
+    $(".post_container").each (function () {
+        $(this).find ('.inner_container').html ($(this).data ('content'));
+    });
 });
