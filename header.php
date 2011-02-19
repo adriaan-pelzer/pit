@@ -99,7 +99,7 @@ function browser_specific_stylesheet(){
 </head>
 
     <body id="<?php echo $post->post_name; ?>">
-<?php echo $page->post_name; ?>
+<?php //echo $page->post_name; ** what is this? I commented it out ** ?>
     <header>
         <hgroup>
         </hgroup>
