@@ -81,6 +81,7 @@ function browser_specific_stylesheet(){
 <!--link rel="stylesheet" href="<?php bloginfo ('template_directory'); ?>/style_<?php echo $browser; ?>.css" /-->
 <?php echo browser_specific_stylesheet (); ?>
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.3/jquery.min.js"></script>
+<script src="<?php bloginfo ('template_url'); ?>/js/jquery.base64.js"></script>
 <script src="<?php bloginfo ('template_url'); ?>/js/scripts.js"></script>
 <!--[if lt IE 7]>
 <script src="<?php bloginfo ('template_url'); ?>/js/pngfix.js"></script>
@@ -99,7 +100,6 @@ function browser_specific_stylesheet(){
 </head>
 
     <body id="<?php echo $post->post_name; ?>">
-<?php echo $page->post_name; ?>
     <header>
         <hgroup>
         </hgroup>
