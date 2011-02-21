@@ -24,7 +24,7 @@ nav ul {
 }
 
 #cat_container {
-    margin-top:-2.5625em;
+    /*margin-top:-2.5625em*/;
 }
 
 .post_container p {
@@ -35,9 +35,13 @@ nav ul {
     float: none;
 }
 
-#body_post_35, #body_post_2 {
+#body_post_2 {
     margin-top: 1.75em;
     display: block;
+}
+
+#contact .body {
+    margin-top: 1em;
 }
 
 footer, header, nav, section {
@@ -46,6 +50,7 @@ footer, header, nav, section {
 
 .page-item-35 {
     margin-top: -1em;
+    margin-right: 0;
 }
 
 #title {
@@ -53,11 +58,11 @@ footer, header, nav, section {
 }
 
 nav li {
-    margin: 0 0.588em;
+    /*margin: 0 0.588em;*/
 }
 
-.caption {
-    margin-top: 1em;
+#body_post_33 p.caption, h3 {
+    font-family: Impact; 
 }
 
 nav {
@@ -72,6 +77,27 @@ nav {
     font-size: 0.875em;
 }
 
-#voices #cat_container, #ads #cat_container {
-    margin-top: 0;
+#ads #cat_container {
+    height: 14.25em;
+}
+
+#ads #inner_container {
+    margin-bottom: 11px;
+}
+
+#voices #cat_container {
+   margin-top: -2em;
+   height: 14.25em;
+} 
+
+.inner_container {
+    margin-top: 11px;
+}
+
+#gradient_right {
+    left: 3px!important;
+}
+
+.schools-programs .body {
+    margin-top: 1em;
 }
