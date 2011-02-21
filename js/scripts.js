@@ -82,4 +82,8 @@ $(document).ready(function(){
         }
     });
 
+    $(".post_container").each (function () {
+        var content = $.base64Decode($(this).data ('content'));
+        $(this).find ('.inner_container').html (content);
+    });
 });

@@ -39,9 +39,15 @@ if ( !empty($categorydesc))
 <?php
 /*$cat_id = get_right_cat();*/
 $myposts = query_posts('posts_per_page=-1&' . $cat . '&orderby=' . $order_by . '');
+$i = 0;
+
 foreach($myposts as $post) {
     setup_postdata($post);
-    include('carousel.php');
+    if ($i++ < 0) {
+        include('carousel.php');
+    } else {
+        include('carousel_empty.php');
+    }
 }
 wp_reset_query();
 ?>
