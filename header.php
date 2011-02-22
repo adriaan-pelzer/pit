@@ -6,32 +6,32 @@ function browser_specific_stylesheet(){
     $browser = new Browser ();
 
     switch ($browser->getBrowser()) {
-    case Browser::BROWSER_OPERA():
+    /*case Browser::BROWSER_OPERA():
         if ($browser->getVersion() >= 11) {
             $stylesheet = 'style_op11.css';
         } else if ($browser->getVersion() >= 10) {
             $stylesheet = 'style_op10.css';
         } 
-        break;
+    break;*/
     case Browser::BROWSER_FIREFOX():
-        if ($browser->getVersion() >= 4) {
+        /*if ($browser->getVersion() >= 4) {
             $stylesheet = 'style_ff4.css';
-        } else if ($browser->getVersion() >= 3.6) {
+        } else*/ if ($browser->getVersion() >= 3.6) {
             $stylesheet = 'style_ff36.css';
         } else if ($browser->getVersion() >= 3.5) {
             $stylesheet = 'style_ff35.css';
         } else if ($browser->getVersion() >= 3.0) {
             $stylesheet = 'style_ff30.css';
-        } else if ($browser->getVersion() >= 3) {
+        } /*else if ($browser->getVersion() >= 2) {
             $stylesheet = 'style_ff2.css';
-        } else {
+        }*/ else {
             $found = FALSE;
         }
         break;
     case Browser::BROWSER_IE():
-        if ($browser->getVersion() >= 9) {
+        /*if ($browser->getVersion() >= 9) {
             $stylesheet = 'style_ie9.css';
-        } else if ($browser->getVersion() >= 8) {
+        } else*/ if ($browser->getVersion() >= 8) {
             $stylesheet = 'style_ie8.css';
         } else if ($browser->getVersion() >= 7) {
             $stylesheet = 'style_ie7.css';
@@ -44,6 +44,8 @@ function browser_specific_stylesheet(){
     case Browser::BROWSER_SAFARI():
         if ($browser->getVersion() >= 5) {
             $stylesheet = 'style_sf5.css';
+        } else if ($browser->getVersion() >= 4) {
+            $stylesheet = 'style_sf4.css';
         } else {
             $found = FALSE;
         }
@@ -51,11 +53,11 @@ function browser_specific_stylesheet(){
     case Browser::BROWSER_CHROME():
         if ($browser->getVersion() >= 8) {
             $stylesheet = 'style_ch8.css';
-        } else if ($browser->getVersion() >= 7) {
+        } /*else if ($browser->getVersion() >= 7) {
             $stylesheet = 'style_ch7.css';
         } else if ($browser->getVersion() >= 6) {
             $stylesheet = 'style_ch6.css';
-        } else {
+        }*/ else {
             $found = FALSE;
         }
         break;
@@ -67,7 +69,7 @@ function browser_specific_stylesheet(){
     if ($stylesheet) {
         return '<link rel="stylesheet" href="'.get_bloginfo ('template_url').'/'.$stylesheet.'" />';
     } else {
-        return '<!-- '.$browser->getUserAgent().' -->';
+        return  '<link rel="stylesheet" href="'.get_bloginfo ('template_url').'/not_found.css" />'/*'<!-- '.$browser->getUserAgent().' -->'*/;
     }
 }
 /* $browser = detect_browser(); */
@@ -100,6 +102,20 @@ function browser_specific_stylesheet(){
 </head>
 
     <body id="<?php echo $post->post_name; ?>">
+<div id="unsupported"> Unfortunately this site does not support your current browser so we cannot guarantee that the content and/or the functionality will be correct. However, we do support the following, one of which we recommend you install.
+    <ul>
+        <li> Firefox 3.0</li>
+        <li> Firefox 3.5</li>
+        <li> Firefox 3.6</li>
+        <li> Chrome 8</li>
+        <li> Safari 4</li>
+        <li> Safari 5</li>
+        <li> Internet Explorer 6</li>
+        <li> Internet Explorer 7</li>
+        <li> Internet Explorer 8</li>
+    </ul>
+</div>
+    
     <header>
         <hgroup>
         </hgroup>

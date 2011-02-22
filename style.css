@@ -106,6 +106,18 @@ h3 {
 
 /*************** header *********************/
 
+#unsupported {
+    display: none;
+    border: 2px solid red;
+    background: pink;
+    color: red;
+    padding: 1em;
+    margin: 1em;
+    text-align: center;
+    font-family: arial;
+    line-height: 1.3em;
+}
+
 #title {
     /*color: #211a12;*/
     text-transform: uppercase; 
