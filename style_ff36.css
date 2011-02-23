@@ -55,3 +55,7 @@ footer {
 #contact_info {
     margin-top: 0;
 }
+
+.inner_container {
+    margin: 0.62em 0px 0.75em;
+}
