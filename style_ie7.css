@@ -118,7 +118,7 @@ nav li {
     margin: 0 33px;
 }
 
-.page-item-2, .page-item-33, .page-item-325 {
+.page-item-2, .page-item-33, .page-item-511, .page-item-325 {
     margin-left: 0;
     margin-right: 0.97em;
 }
@@ -178,6 +178,9 @@ footer, header, nav, section {
 
 #drop_down_list li#drop_down_bottom {
     margin-top: -14px;
+    height: 2em;
+    background-repeat: no-repeat;
+    border-bottom: 3px solid transparent;
 }
 
 .page-item-35 {
