@@ -60,5 +60,4 @@ wp_reset_query();
 <!--nav id="paging">
     <span id="page_left"><a>&laquo;</a></span><span id="page_right"><a>&raquo;</a></span>
 </nav-->
-
 <?php get_footer() ?>
