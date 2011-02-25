@@ -12,7 +12,16 @@ $(document).ready(function(){
     }
     $('#paging').data ('position', 0);
     $('#page_left a img').css({top: '0px', cursor: 'default'});
-    if (($.browser.msie) && ((verArray[0]) <= 7)){
+
+    if (($.browser.msie) && ((verArray[0]) == 6)){
+        $('#page_right a img').css({top: '-334px', cursor: 'pointer'});
+        $('#page_right a img').hover (function() {
+            $(this).css('top', '-167px');
+        }, function() {
+            $(this).css('top', '-334px');
+        });
+    }
+    if (($.browser.msie) && ((verArray[0]) == 7)){
         $('#page_right a img').css({top: '-334px', cursor: 'pointer'});
         $('#page_right a img').hover (function() {
             $(this).css('top', '-167px');
