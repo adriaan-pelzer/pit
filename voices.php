@@ -6,12 +6,13 @@ Template Name: Voices
 <?php get_header() ?>
 <?php
 $num_posts = (wp_count_posts());
+$cat_to_exclude = get_cat_ID('show case');
 if ($_GET['voice_name']) {
     $name_place_holder = $_GET['voice_name'];
     $cat_obj = get_category_by_slug($name_place_holder);
     $name_id = $cat_obj->term_id;
 } else {
-    $name_id = '';
+    $name_id = '-' . $cat_to_exclude;
     $name_place_holder = 'Please Choose A Voice Artist';
 }
 ?>
@@ -58,6 +59,7 @@ foreach($myposts as $post) {
         include('carousel_empty.php');
     }
 }
+wp_reset_query();
 ?>
     </div><!-- #content .hfeed -->
     <nav id="paging">
