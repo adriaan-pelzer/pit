@@ -48,9 +48,15 @@ if ( !empty($categorydesc))
 <?php
 /*$cat_id = get_right_cat();*/
 $myposts = get_posts('numberposts=-1&category='. $name_id .'');
+$i = 0;
+
 foreach($myposts as $post) {
     setup_postdata($post);
-    include('carousel.php');
+    if ($i++ < 0) {
+        include('carousel.php');
+    } else {
+        include('carousel_empty.php');
+    }
 }
 ?>
     </div><!-- #content .hfeed -->
