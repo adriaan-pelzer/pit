@@ -177,7 +177,6 @@ footer, header, nav, section {
 }
 
 #drop_down_list li#drop_down_bottom {
-    margin-top: -14px;
     height: 2em;
     background-repeat: no-repeat;
     border-bottom: 3px solid transparent;

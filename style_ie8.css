@@ -102,7 +102,7 @@ li.page-item-35 {
     margin-right: 0.2em;
 }
 
-#voices #gradient_left, #voices #gradient_right {    /*********** This is only valid if there are lots of ads otherwise it breaks ***/
+#voices #gradient_left, #voices #gradient_right, #ads #gradient_left, #ads #gradient_right {    /*********** This is only valid if there are lots of ads otherwise it breaks ***/
     top: -17.5em;
 }
 
