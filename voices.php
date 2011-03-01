@@ -22,6 +22,7 @@ if ($_GET['voice_name']) {
     <img src="<?php bloginfo('template_url'); ?>/images/drop_down_list_bg.png" class="hidden" />
 <?php $top_cat = get_cat_ID('Artist Name');
 $voices = get_categories('child_of='. $top_cat .''); 
+/*$voices_number = count($voices);*/
 ?>
     <span id="drop_down_button" onClick="toggle_list_display()">
         <a>
