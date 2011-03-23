@@ -4,6 +4,8 @@ require_once 'Browser_php4_compat.php';
 
 function browser_specific_stylesheet(){
     $browser = new Browser ();
+    global $ie_6;
+    $ie_6 = 0;
 
     switch ($browser->getBrowser()) {
     /*case Browser::BROWSER_OPERA():
@@ -37,6 +39,7 @@ function browser_specific_stylesheet(){
             $stylesheet = 'style_ie7.css';
         } else if ($browser->getVersion() >= 6) {
             $stylesheet = 'style_ie6.css';
+            $ie_6 = 1;
         } else {
             $found = FALSE;
         }

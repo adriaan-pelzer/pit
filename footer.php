@@ -1,6 +1,10 @@
-<footer <?php /*if(isset($voices_number)){echo 'style="margin-bottom: ' . $number_voices . 'px;"';}*/ ?>>
+<?php
+global $voices_number;
+global $ie_6;
+?>
+<footer <?php if($ie_6){if(($voices_number > 18)) {echo 'style="padding-bottom: ' . (($voices_number - 18) * 16) . 'px;"';}} ?>>
 <hr />
-&copy; <?php echo date('Y'); ?> PIT Productions
+<p>&copy; <?php echo date('Y'); ?> PIT Productions</p>
 </footer>
 </body>
 </html>

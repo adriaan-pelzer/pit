@@ -196,6 +196,7 @@ li#drop_down_bottom {
     height: 2em;
     background-repeat: no-repeat;
     border-bottom: 3px solid transparent;
+    margin-bottom: 50px;
 }
 
 #drop_down_button {
@@ -256,3 +257,6 @@ li#drop_down_bottom {
 
 }
 
+#voices {
+    overflow-y: visible;
+}

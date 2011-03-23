@@ -2,8 +2,12 @@
 /*
 Template Name: Voices 
 */
+global $voices_number;
 ?>
 <?php get_header() ?>
+<img src="<?php bloginfo('template_url'); ?>/images/drop_down_list_top.png" class="hidden" />
+<img src="<?php bloginfo('template_url'); ?>/images/drop_down_list_bottom.png" class="hidden" />
+<img src="<?php bloginfo('template_url'); ?>/images/drop_down_list_bg.png" class="hidden" />
 <?php
 $num_posts = (wp_count_posts());
 $cat_to_exclude = get_cat_ID('show case');
@@ -17,18 +21,15 @@ if ($_GET['voice_name']) {
 }
 ?>
 <section id="voices_drop_down">
-    <img src="<?php bloginfo('template_url'); ?>/images/drop_down_list_top.png" class="hidden" />
-    <img src="<?php bloginfo('template_url'); ?>/images/drop_down_list_bottom.png" class="hidden" />
-    <img src="<?php bloginfo('template_url'); ?>/images/drop_down_list_bg.png" class="hidden" />
 <?php $top_cat = get_cat_ID('Artist Name');
 $voices = get_categories('child_of='. $top_cat .''); 
-/*$voices_number = count($voices);*/
+$voices_number = count($voices);
 ?>
     <span id="drop_down_button" onClick="toggle_list_display()">
         <a>
         <?php echo ucfirst($name_place_holder); ?>
         </a>
-        <ul id="drop_down_list">
+            <ul id="drop_down_list">
             <li id="drop_down_top" class="pngfix"></li>
 <?php
 foreach ($voices as $voice) {
@@ -38,6 +39,8 @@ foreach ($voices as $voice) {
             <li id="drop_down_bottom" class="pngfix"></li>
         </ul>
     </span>
+<?php 
+?>
 </section>
 <div id="cat_container" class="body">
 <?php /*get_sidebar ();*/
