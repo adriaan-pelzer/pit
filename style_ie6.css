@@ -87,7 +87,6 @@ body {
     overflow: hidden;
     position: relative;
     margin-top: 0;
-    
 }
 
 #cat_content .post_container .post_date {
@@ -111,7 +110,7 @@ footer, header, nav, section {
     margin-top: -1.566666em;
 }
 
-#paging a:hover {
+#voices_drop_down span#drop_down_button a:hover, #paging a:hover {
     color: #d5e445;
 }
 
@@ -194,8 +193,7 @@ li#drop_down_bottom {
     background: url(images/drop_down_list_bottom.png);
     background-repeat: no-repeat;
     height: 2em;
-    background-repeat: no-repeat;
-    border-bottom: 3px solid transparent;
+    /*border-bottom: 0 solid transparent!important;*/
     margin-bottom: 50px;
 }
 

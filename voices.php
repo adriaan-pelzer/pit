@@ -26,7 +26,7 @@ $voices = get_categories('child_of='. $top_cat .'');
 $voices_number = count($voices);
 ?>
     <span id="drop_down_button" onClick="toggle_list_display()">
-        <a>
+        <a href="#">
         <?php echo ucfirst($name_place_holder); ?>
         </a>
             <ul id="drop_down_list">
