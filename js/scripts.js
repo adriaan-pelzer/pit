@@ -31,6 +31,11 @@ $(document).ready(function(){
     }
     if ($('.post_container').size() == 1) {
         $('#page_right a img').css({top: '0px', cursor: 'default'});
+        $('#page_right a img').hover (function() {
+            $(this).css('top', '0px');
+        }, function() {
+            $(this).css('top', '0px');
+        });
     }
 
     $('#page_left').click (function () {
