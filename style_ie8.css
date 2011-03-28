@@ -25,6 +25,7 @@ nav ul {
 
 #title_right {
     margin-top: 1.75em;
+    padding-right: 1px;
 }
 
 #number {
@@ -102,8 +103,12 @@ li.page-item-35 {
     margin-right: 0.2em;
 }
 
-#voices #gradient_left, #voices #gradient_right, #ads #gradient_left, #ads #gradient_right {    /*********** This is only valid if there are lots of ads otherwise it breaks ***/
-    top: -17.5em;
+#voices #gradient_left, #voices #gradient_right, #ads #gradient_left, #ads #gradient_right {
+    top: -11.75em;
+}
+
+#cat_content {
+    height: 212px;
 }
 
 .inner_container {
@@ -117,4 +122,8 @@ li.page-item-35 {
 
 #about .body p, #schools-programs .body p {
     line-height: 1.21em;
+}
+
+#productions {
+    width: 390px;
 }
