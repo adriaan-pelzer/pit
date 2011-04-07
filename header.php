@@ -16,9 +16,9 @@ function browser_specific_stylesheet(){
         } 
     break;*/
     case Browser::BROWSER_FIREFOX():
-        /*if ($browser->getVersion() >= 4) {
+        if ($browser->getVersion() >= 4) {
             $stylesheet = 'style_ff4.css';
-        } else*/ if ($browser->getVersion() >= 3.6) {
+        } else if ($browser->getVersion() >= 3.6) {
             $stylesheet = 'style_ff36.css';
         } else if ($browser->getVersion() >= 3.5) {
             $stylesheet = 'style_ff35.css';
@@ -31,9 +31,9 @@ function browser_specific_stylesheet(){
         }
         break;
     case Browser::BROWSER_IE():
-        /*if ($browser->getVersion() >= 9) {
+        if ($browser->getVersion() >= 9) {
             $stylesheet = 'style_ie9.css';
-        } else*/ if ($browser->getVersion() >= 8) {
+        } else if ($browser->getVersion() >= 8) {
             $stylesheet = 'style_ie8.css';
         } else if ($browser->getVersion() >= 7) {
             $stylesheet = 'style_ie7.css';

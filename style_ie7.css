@@ -116,6 +116,7 @@ nav ul {
 nav li {
     zoom: 1;
     margin: 0 33px;
+    position: relative;
 }
 
 .page-item-2, .page-item-33, .page-item-511, .page-item-325 {
@@ -195,6 +196,10 @@ footer {
     margin-top: 4em;
 }
 
-#about footer, #schools-programs footer {
+#about footer, #theatre-shows footer {
     margin-top: 3.65em;
+}
+
+#productions {
+    width: 390px;
 }

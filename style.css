@@ -316,16 +316,16 @@ nav li.current_page_item a {
     left: 2px;
 }
 
-#contact .body, #home .body, #about .body, #schools-programs .body {
+#contact .body, #home .body, #about .body, #theatre-shows .body {
     font-family: american_typewriter, serif;
     color: #51261f;
 }
 
-#contact .body p strong, #home .body p strong, #about .body p strong, #schools-programs .body p strong {
+#contact .body p strong, #home .body p strong, #about .body p strong, #theatre-shows .body p strong {
     font-family: american_typewriter_bold, serif;
 }
 
-#about .body ul, #home .body ul, #contact .body p, #home .body p, #about .body p, #schools-programs .body p {
+#about .body ul, #home .body ul, #contact .body p, #home .body p, #about .body p, #theatre-shows .body p {
     margin: 1.25em auto;
     line-height: 1.25em;
     font-size: 0.875em;
@@ -354,11 +354,11 @@ nav li.current_page_item a {
  width: 26.666em;
 }
 
-#schools-programs .body a, #schools-programs .body a:visited, #about .body a, #about .body a:visited, #contact .body a, #contact .body a:visited {
+#theatre-shows .body a, #theatre-shows .body a:visited, #about .body a, #about .body a:visited, #contact .body a, #contact .body a:visited {
     color: #d5e445;
 }
 
-#about .body a:hover, #contact .body a:hover, #schools-programs .body a:hover {
+#about .body a:hover, #contact .body a:hover, #theatre-shows .body a:hover {
     color: #51261f;
 }
 

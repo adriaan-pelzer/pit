@@ -9,3 +9,7 @@
 .post_container p {
     padding: 0.625em 0 0.75em 0;
 }
+
+#title {
+    padding: 0;
+}

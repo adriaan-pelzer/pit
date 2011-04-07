@@ -1,0 +1,61 @@
+@font-face {
+    font-family: bernard;
+    src: url(bernhc-webfont.eot);
+}
+
+@font-face {
+    font-family: american_typewriter;
+    src: url(amrtypen_1-webfont.eot);
+}
+
+@font-face {
+    font-family: american_typewriter_bold;
+    src: url(amrtypeb_1-webfont.eot);
+}
+
+body {
+    margin-top: 0;
+}
+
+#productions, #produksies {
+    font-size: 72px;
+}
+
+#pit {
+    font-size: 300px;
+}
+
+#drop_down_button {
+    height: 28px;
+    width: 271px;
+    padding-right: 19px;
+}
+
+#drop_down_list li {
+    width: 290px;
+}
+
+#title {
+    margin-top: 2em;
+}
+
+h3.post-title {
+    margin-bottom: 15px;
+}
+
+#gradient_right {
+    margin-left: 352px;
+}
+
+#gradient_right, #gradient_left {
+    top: -11.75em;
+}
+
+li#drop_down_bottom {
+    background-repeat: no-repeat!important;
+    height: 1em!important;
+}
+
+.post_date {
+    margin-top: 10px;
+}

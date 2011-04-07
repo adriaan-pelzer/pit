@@ -166,7 +166,7 @@ nav li {
     left: 110px;
 }
 
- #home .body, #schools-programs .body {
+ #home .body, #theatre-shows .body {
      margin-top: -3.8em;
  }
 
@@ -235,9 +235,9 @@ li#drop_down_bottom {
 
 }
 
-#voices img, #about img, #ads img, #schools-programs img, #contact img,
+#voices img, #about img, #ads img, #theatre-shows img, #contact img,
 
-#voices .pngfix, #about .pngfix, #ads .pngfix, #schools-programs .pngfix, #contact .pngfix{
+#voices .pngfix, #about .pngfix, #ads .pngfix, #theatre-shows .pngfix, #contact .pngfix{
 
     position:relative;
 
