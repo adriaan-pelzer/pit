@@ -13,3 +13,11 @@
 #title {
     padding: 0;
 }
+
+#gradient_right, #voices #gradient_right {
+    left: 3px;
+}
+
+.inner_container {
+    margin: 0.62em 0px 0.75em;
+}

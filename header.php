@@ -97,17 +97,12 @@ function browser_specific_stylesheet(){
 </head>
 
     <body id="<?php echo $post->post_name; ?>">
-<div id="unsupported"> Unfortunately this site does not support your current browser so we cannot guarantee that the content and/or the functionality will be correct. However, we do support the following, one of which we recommend you install.
+<div id="unsupported"> Unfortunately this site does not support your current browser so we cannot guarantee that the content and/or the functionality will be correct. We recommend that you download one of the following which we do support.
     <ul>
-        <li> Firefox 3.0</li>
-        <li> Firefox 3.5</li>
-        <li> Firefox 3.6</li>
-        <li> Chrome 8</li>
-        <li> Safari 4</li>
-        <li> Safari 5</li>
-        <li> Internet Explorer 6</li>
-        <li> Internet Explorer 7</li>
-        <li> Internet Explorer 8</li>
+        <li><a href="http://www.mozilla.com/">Firefox</a></li>
+        <li><a href="http://www.google.com/chrome">Chrome</a></li>
+        <li><a href="http://www.apple.com/safari">Safari</a></li>
+        <li><a href="http://windows.microsoft.com/en-US/internet-explorer/products/ie/home">Internet Explorer</a></li>
     </ul>
 </div>
     

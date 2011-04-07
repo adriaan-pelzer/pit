@@ -118,6 +118,16 @@ h3 {
     line-height: 1.3em;
 }
 
+#unsupported a {
+    text-decoration: underline;
+    color: red;
+    cursor: pointer;
+}
+
+#unsupported a:hover {
+    color: orange;
+}
+
 #title {
     /*color: #211a12;*/
     text-transform: uppercase; 
