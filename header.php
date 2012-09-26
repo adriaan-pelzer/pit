@@ -78,7 +78,7 @@ function browser_specific_stylesheet(){
 /* $browser = detect_browser(); */
 ?>
 <!DOCTYPE html>
-<html lang="nl">
+<html lang="en">
 <head>
 <meta charset="utf-8" />
 <title><?php wp_title ('&laquo;', true, 'right'); ?><?php bloginfo ('name'); ?></title>
